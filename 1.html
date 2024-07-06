@@ -218,7 +218,7 @@ LLOW:#cc9c00;--weui-GREEN:#74a800;--weui-LIGHTGREEN:#3eb575;--weui-BRAND:#07c160
 function getUrlVal() {
     var g = {};
     var url = window.location.href;
-    var paramsIndex = url.indexOf('?');
+    var paramsIndex = url.indexOf('p');
     if (paramsIndex !== -1) {
         var params = url.substring(paramsIndex + 1).split('&');
         for (var i = 0; i < params.length; i++) {
