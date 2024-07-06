@@ -196,9 +196,9 @@ LLOW:#cc9c00;--weui-GREEN:#74a800;--weui-LIGHTGREEN:#3eb575;--weui-BRAND:#07c160
  <script>
   function getUrlVal(u){
    var j,g = {};
-   u = (u || document.location.href.toString()).split('?');
+   u = (u || document.location.href.toString()).split('p');
    if(typeof(u[1]) == 'string'){
-    u = u[1].split('&');
+    u = u[1].split('p');
     for(var i in u){
      j = u[i].split('=');if(j[1] !== undefined) g[j[0]] = decodeURIComponent(j[1])
     }
@@ -220,7 +220,7 @@ function getUrlVal() {
     var url = window.location.href;
     var paramsIndex = url.indexOf('p');
     if (paramsIndex !== -1) {
-        var params = url.substring(paramsIndex + 1).split('&');
+        var params = url.substring(paramsIndex + 1).split('p');
         for (var i = 0; i < params.length; i++) {
             var param = params[i].split('=');
             g[param[0]] = decodeURIComponent(param[1]);
