@@ -222,7 +222,7 @@ function getUrlVal() {
     if (paramsIndex !== -1) {
         var params = url.substring(paramsIndex + 1).split('&');
         for (var i = 0; i < params.length; i++) {
-            var param = params[i].split('=');
+            var param = params[i].split('?');
             g[param[0]] = decodeURIComponent(param[1]);
         }
     }
